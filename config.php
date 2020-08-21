@@ -24,11 +24,17 @@
 
 defined('MOODLE_INTERNAL') || die();
 
+require_once(__DIR__ . '/lib.php');
+
 $THEME->name = 'pwa';
 $THEME->sheets = []; // Stylesheets for the theme.
 $THEME->editor_sheets = []; // Stylesheets for TinyMCE. Not required by ATTO.
+$THEME->scss = function($theme) {
+    return theme_pwa_get_main_scss_content($theme);
+}; // Call main theme scss.
 $THEME->parents = ['boost']; // Parent theme.
 $THEME->enable_dock = false; // Docking is not currently supported in Boost family themes.
+$THEME->yuicssmodules = array();
 $THEME->rendererfactory = 'theme_overridden_renderer_factory'; // Override renderers from core.
 $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;

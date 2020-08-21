@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Raleway";
+    src: url([[font:theme|Raleway-Regular.ttf]]) format("truetype");
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: "Montserrat";
+    src: url([[font:theme|Montserrat-Regular.ttf]]) format("truetype");
+}

@@ -24,4 +24,18 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-// We will add callbacks here as we add features to our theme.
+/**
+ * Load the main SCSS.
+ *
+ * @param theme_config $theme The theme config object.
+ * @return string
+ */
+function theme_pwa_get_main_scss_content($theme) {
+    global $CFG;
+
+    $scss = '';
+    $scss .= file_get_contents("$CFG->dirroot/theme/pwa/scss/defaultvariables.scss");
+    $scss .= file_get_contents("$CFG->dirroot/theme/pwa/scss/styles.scss");
+
+    return $scss;
+}
