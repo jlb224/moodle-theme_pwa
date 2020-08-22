@@ -6,46 +6,47 @@ body #page {
     h4,
     h5,
     h6 {
-        color: $gray-800;
+
         border: none;
-        line-height: 1.5rem;
+        color: $pwa-charcoal;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        line-height: 1.3em;
+        padding-bottom: 10px;
     }
 
     h1 {
-        font-family: $font-family-sans-serif;
+        font-family: $font-family-sans-serif-raleway;
         font-size: $h1-font-size;
         font-weight: normal;
         letter-spacing: 0.5px;
         line-height: $line-height-lg;
-        color: $gray-800;
     }
 
     h2 {
-        font-weight: normal;
-        font-size: 1.75rem;
-        line-height: 2rem;
+        font-family: $font-family-sans-serif-montserrat;
+        font-size: $h2-font-size;
     }
 
     h3 {
-        font-weight: normal;
-        font-size: 1.25rem;
+        color: $pwa-lightgreen;
+        font-family: $font-family-sans-serif-droid;
+        font-size: $h3-font-size; // 18px.
+        text-transform: uppercase;
     }
 
     h4 {
-        font-size: 1.1rem;
-        font-weight: lighter;
-        // Montserrat, Helvetica, Arial, Lucida, sans-se
+        font-family: $font-family-sans-serif-montserrat;
+        font-size: $h4-font-size;
+        text-transform: uppercase;
     }
 
     h5 {
         font-size: 0.9rem;
-        line-height: 1rem;
-        font-weight: lighter;
     }
 
     h6 {
         font-size: 0.7rem;
         line-height: 1rem;
-        font-weight: lighter;
     }
 }

@@ -6,22 +6,27 @@ $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
 $gray-500: #adb5bd !default;
-$gray-600: #868e96 !default;
+$gray-600: #6c757d !default;
 $gray-700: #495057 !default;
-$gray-800: #3C443E !default;
+$gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #3097d1 !default;
+$blue:    #007bff !default;
 $indigo:  #6610f2 !default;
-$purple:  #613d7c !default;
+$purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #d9534f !default;
-$orange:  #f0ad4e !default;
-$yellow:  #ff7518 !default;
-$green:   #406A48 !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
 $teal:    #20c997 !default;
-$cyan:    #5bc0de !default;
+$cyan:    #17a2b8 !default;
+
+$pwa-charcoal:   #3C443E !default;
+$pwa-green:      #406A48 !default;
+$pwa-lightgreen: #8EB06B !default;
+$pwa-cream:      #F8F3ED !default;
 
 $primary:       #406A48 !default;
 $secondary:     $gray-800 !default;
@@ -36,22 +41,22 @@ $dark:          $gray-800 !default;
 $enable-rounded: false !default;
 
 // Body
-$body-color:    $gray-800 !default;
-$footer-bg:     red !default;
-$footer-color: red !default;
+$body-color:   $pwa-charcoal !default;
+$footer-bg:    $pwa-cream!default;
 
 // Fonts
 $font-family-system: -apple-system, BlinkMacSystemFont, Helvetica, Arial, Lucida, sans-serif !default;
-$font-family-sans-serif: "Raleway", $font-family-system;
-$font-family-sans-serif-h4: "Montserrat", $font-family-system;
+$font-family-sans-serif-raleway: "Raleway", $font-family-system;
+$font-family-sans-serif-montserrat: "Montserrat", $font-family-system;
+$font-family-sans-serif-droid: "Droid-serif", $font-family-system;
 
 $font-size-base: 0.9375rem !default;
-$h1-font-size: $font-size-base * 3.1 !default;
-$h2-font-size: $font-size-base * 2 !default;
-$h3-font-size: $font-size-base * 1.75 !default;
-$h4-font-size: $font-size-base * 1.5 !default;
-$h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base !default;
+$h1-font-size: $font-size-base * 3.2 !default; // 48px.
+$h2-font-size: $font-size-base * 1.87 !default; // 28px.
+$h3-font-size: $font-size-base * 1.2 !default; // 18px.
+$h4-font-size: $font-size-base * 0.93 !default; // 14px.
+// $h5-font-size: $font-size-base * 1.25 !default;
+// $h6-font-size: $font-size-base !default;
 $headings-font-weight: 400 !default;
 
 // Navbar

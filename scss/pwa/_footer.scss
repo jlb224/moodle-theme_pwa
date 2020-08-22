@@ -14,70 +14,28 @@
 
 #page-footer {
     padding: 1.5em 0;
-    background-color:red;
-    color: #cdcece;
+    background-color: $footer-bg;
+    // color: #cdcece;
 
-    h3 {
-        font-size: 1.25em;
-        line-height: 1.5em;
-    }
-
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: $white;
+    h4 {
+        border: none;
+        color: $pwa-charcoal;
+        font-family: $font-family-sans-serif-montserrat;
+        font-size: 0.875rem;
         text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: 0.5px;
+        line-height: 1.3em;
+        padding-bottom: 10px;
     }
 
-    a:not(.button) {
-        transition: color 0.2s ease-in-out;
-        color: #cdcece;
+    a {
+        color: $pwa-lightgreen;
+        font-weight: bold;
         text-decoration: none;
     }
 
-    .row.gtr-uniform > * > :last-child {
-        margin-bottom: 0;
-    }
-
-    ul.labeled-icons {
-        list-style: none;
-        padding-left: 0;
-
-        li {
-            margin-bottom: 1.5em;
-            position: relative;
-
-            span {
-                width: 1.5em;
-            }
-
-            p {
-                display: inline;
-            }
-        }
-    }
-
-    .smalltext {
-        font-size: 0.9rem;
-
-        a {
-            color: #afb1b0;
-            text-decoration: underline;
-        }
-    }
-
-    .copyleft {
-        color: #cdcece;
-        font-size: 0.9em;
-        margin: 3em 0 0 0;
-        padding: 0;
-        text-align: center;
-
-        span {
-            display: inline-block;
-            transform: rotate(180deg);
-        }
+    a:hover {
+        text-decoration: underline;
     }
 }
