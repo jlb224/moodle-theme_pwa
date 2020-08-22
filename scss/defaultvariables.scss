@@ -37,10 +37,13 @@ $enable-rounded: false !default;
 
 // Body
 $body-color:    $gray-800 !default;
+$footer-bg:     red !default;
+$footer-color: red !default;
 
 // Fonts
-$font-family-system: -apple-system, BlinkMacSystemFont, Raleway, Helvetica, Arial, Lucida, sans-serif !default;
+$font-family-system: -apple-system, BlinkMacSystemFont, Helvetica, Arial, Lucida, sans-serif !default;
 $font-family-sans-serif: "Raleway", $font-family-system;
+$font-family-sans-serif-h4: "Montserrat", $font-family-system;
 
 $font-size-base: 0.9375rem !default;
 $h1-font-size: $font-size-base * 3.1 !default;
