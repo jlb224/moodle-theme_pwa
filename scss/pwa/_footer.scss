@@ -1,16 +1,37 @@
+#top-footer {
+    background-color: $pwa-green;
 
+    .social-media {
+        justify-content: center;
 
-// #page-footer {
-//     background-color: red;
-//     padding-top: 60px;
-//     font-family: $font-family-sans-serif-h4;
-//     letter-spacing: normal;
-//     // color: $footer-color;
+        .fa {
+            padding: 16px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+        }
 
-//     .text-light {
-//         color: $footer-color !important;;
-//     }
-// }
+        ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+        }
+
+        li {
+            float: left;
+         }
+
+        li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+                text-decoration: none;
+        }
+    }
+}
+
 
 #page-footer {
     padding: 1.5em 0;
@@ -29,30 +50,31 @@
         padding-bottom: 10px;
     }
 
-    a {
-        color: $pwa-lightgreen;
-        font-size: 0.775rem;
-        font-weight: bold;
-        line-height: 1;
-        text-decoration: none;
-    }
-
-    a:hover {
-        text-decoration: underline;
-    }
-
     p {
         font-family: $font-family-sans-serif-raleway;
     }
 
-    .footer-links ul {
-        list-style: none;
-        padding-left: 0;
+    .footer-links {
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        a {
+            color: $pwa-lightgreen;
+            font-size: 0.775rem;
+            font-weight: bold;
+            line-height: 1;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     }
 
     .col-logo {
         width: 24%;
-        // padding-right: 60px;
         padding: 0 10px 0 60px;
         float: left;
     }
