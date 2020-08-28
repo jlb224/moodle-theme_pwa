@@ -1,5 +1,6 @@
 body #page {
     //heading
+    font-family: $font-family-sans-serif-raleway;
     h1,
     h2,
     h3,
@@ -35,7 +36,7 @@ body #page {
         text-transform: uppercase;
     }
 
-    h4 {
+    h4, h5.card-title {
         font-family: $font-family-sans-serif-montserrat;
         font-size: $h4-font-size;
         text-transform: uppercase;
@@ -50,3 +51,11 @@ body #page {
         line-height: 1rem;
     }
 }
+
+#region-main.has-blocks {
+    background-color: white;
+}
+
+#nav-drawer[data-region="drawer"] {
+    background-color: #efefef;
+    }

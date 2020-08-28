@@ -41,11 +41,12 @@ $dark:          $gray-800 !default;
 $enable-rounded: false !default;
 
 // Body
+$body-bg:     #efefef !default;
 $body-color:   $pwa-charcoal !default;
 $footer-bg:    $pwa-cream!default;
 
 // Fonts
-$font-family-system: -apple-system, BlinkMacSystemFont, Helvetica, Arial, Lucida, sans-serif !default;
+$font-family-system: -apple-system, BlinkMacSystemFont, "Raleway", Helvetica, Arial, Lucida, sans-serif !default;
 $font-family-sans-serif-raleway: "Raleway", $font-family-system;
 $font-family-sans-serif-montserrat: "Montserrat", $font-family-system;
 $font-family-sans-serif-droid: "Droid-serif", $font-family-system;
