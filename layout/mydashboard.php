@@ -52,34 +52,11 @@ $templatecontext = [
     'hasadminblocks' => is_siteadmin(),
     'sideadminblocks' => $adminblockshtml,
     'hasblocks' => $hasblocks,
-    'showdashboardadmin' => false,
     'bodyattributes' => $bodyattributes,
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
-    // 'defaultfrontpagefooter' => $pluginsettings->defaultfooter,
-    // 'footerinfo' => $pluginsettings->enablefooterinfo,
 ];
-
-// if (is_siteadmin() && $pluginsettings->enableadmindashboard) {
-//     $templatecontext['showdashboardadmin'] = true;
-//     $templatecontext['disk'] = get_disk_usage();
-//     $templatecontext['totalcourses'] = count_courses();
-//     $templatecontext['activecourses'] = count_active_courses();
-//     $templatecontext['activeenrolments'] = count_active_enrolments();
-//     $templatecontext['enrolments'] = count_users_enrolments();
-//     $templatecontext['issuestatus'] = get_environment_issues();
-// }
-
-if (is_siteadmin()) {
-    $templatecontext['showdashboardadmin'] = true;
-    $templatecontext['disk'] = get_disk_usage();
-    $templatecontext['totalcourses'] = count_courses();
-    $templatecontext['activecourses'] = count_active_courses();
-    $templatecontext['activeenrolments'] = count_active_enrolments();
-    $templatecontext['enrolments'] = count_users_enrolments();
-    $templatecontext['issuestatus'] = get_environment_issues();
-}
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;
 echo $OUTPUT->render_from_template('theme_pwa/mydashboard', $templatecontext);

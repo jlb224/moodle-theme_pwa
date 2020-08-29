@@ -1,0 +1,111 @@
+#pwa-navbar {
+    border-bottom: 2pt $pwa-lightgreen solid;
+    $font-family-sans-serif-raleway: "Raleway", $font-family-system;
+
+    a {
+        text-decoration: none;
+    }
+
+    nav {
+        font-family: monospace;
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+    }
+
+    li {
+        color: $pwa-charcoal;
+        display: block;
+        float: left;
+        padding: 1rem;
+        position: relative;
+        text-decoration: none;
+        transition-duration: 0.5s;
+    }
+
+    li a {
+        color: $pwa-charcoal;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+  li ul li a:hover {
+        color: $pwa-lightgreen;
+        cursor: pointer;
+    }
+
+    ul li ul {
+        background: $pwa-cream;
+        visibility: hidden;
+        opacity: 0;
+        min-width: 5rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        margin-top: 1rem;
+        left: 0;
+        display: none;
+    }
+
+    ul li:hover > ul,
+    ul li ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+    }
+
+    ul li ul li {
+        clear: both;
+        width: 100%;
+        border-bottom: 1pt $pwa-charcoal solid;
+    }
+
+    .navbar {
+        max-height:120px;
+    }
+
+}
+
+.navbar {
+    max-height: 150px;
+    height: 120px;
+}
+
+[data-region="drawer"] {
+    position: fixed;
+    padding: 20px 20px;
+    width: 285px;
+    top: 120px;
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    z-index: 999;
+    background-color: #f2f2f2;
+    -webkit-transition: right .5s ease,left .5s ease;
+    -moz-transition: right .5s ease,left .5s ease;
+    -o-transition: right .5s ease,left .5s ease;
+    transition: right .5s ease,left .5s ease;
+}
+
+#page {
+    margin-top: 125px;
+}
+
+:target::before {
+    content: " ";
+    display: block;
+    height: 120px;
+    margin-top: 0px;
+    width: 1px;
+    pointer-events: none;
+}
+
+nav.navbar .logo img {
+
+    max-height: 120px;
+
+}
+
