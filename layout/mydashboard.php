@@ -17,9 +17,11 @@
 /**
  * My dashboard file.
  *
- * @package   theme_pwa
- * @copyright 2020 Jo Beaver
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package     theme_pwa
+ * @copyright   2019 pwa - {@link https://pwa.tech/}
+ * @author      Rodrigo Mady
+ * @author      Trevor Furtado
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
@@ -41,7 +43,7 @@ $bodyattributes = $OUTPUT->body_attributes($extraclasses);
 $blockshtml = $OUTPUT->blocks('side-pre');
 $hasblocks = strpos($blockshtml, 'data-block=') !== false;
 $adminblockshtml = $OUTPUT->blocks('side-admin');
-// $pluginsettings = get_config("theme_pwa");
+$pluginsettings = get_config("theme_pwa");
 
 $regionmainsettingsmenu = $OUTPUT->region_main_settings_menu();
 
@@ -56,6 +58,8 @@ $templatecontext = [
     'navdraweropen' => $navdraweropen,
     'regionmainsettingsmenu' => $regionmainsettingsmenu,
     'hasregionmainsettingsmenu' => !empty($regionmainsettingsmenu),
+    'defaultfrontpagefooter' => $pluginsettings->defaultfooter,
+    'footerinfo' => $pluginsettings->enablefooterinfo
 ];
 
 $templatecontext['flatnavigation'] = $PAGE->flatnav;

@@ -1,0 +1,39 @@
+// #page-my-index {
+
+//     #region-main > .card > .card-body {
+//         padding: 0;
+//     }
+
+//     #mydashboard-user {
+//         .card-body {
+
+//             .fa {
+//                 color: rgba($primary, 0.15);
+//             }
+//         }
+//     }
+
+//     .progress-text.has-percent {
+//         font-size: 15px;
+//     }
+
+//     .block_myoverview {
+//         .courses-view-course-item.card {
+//             max-width: 275px;
+//             box-shadow: 5px 5px 9px -4px rgba($primary, .1);
+//             border-bottom: solid 3px $primary;
+
+//             .card-img-top {
+//                 height: 100px;
+//             }
+
+//             .courseimage {
+//                 background-position: center right;
+//             }
+//         }
+//     }
+// }
+$dashboard-bg: blue;
+#page-my-index {
+    background-color: $dashboard-bg;
+}
