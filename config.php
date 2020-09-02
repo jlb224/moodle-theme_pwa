@@ -40,3 +40,14 @@ $THEME->requiredblocks = '';
 $THEME->addblockposition = BLOCK_ADDBLOCK_POSITION_FLATNAV;
 $THEME->iconsystem = \core\output\icon_system::FONTAWESOME;
 $THEME->hidefromselector = false;
+
+$THEME->layouts = [
+
+    // My dashboard page.
+    'mydashboard' => array(
+        'file' => 'mydashboard.php',
+        'regions' => array('side-pre', 'side-admin'),
+        'defaultregion' => 'side-pre',
+        'options' => array('nonavbar' => true, 'langmenu' => true),
+    )
+];
