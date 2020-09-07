@@ -1,0 +1,34 @@
+#styleguide {
+
+    #swatch-deck {
+
+        h5, p {
+            color: white;
+        }
+
+        .swatch-1 {
+            background-color: $pwa-charcoal;
+        }
+
+        .swatch-2 {
+            background-color: $pwa-green;
+        }
+
+        .swatch-3 {
+            background-color: $pwa-lightgreen;
+        }
+
+        .swatch-4 {
+            background-color: $pwa-cream;
+            h5, p {
+                color: $pwa-charcoal;
+            }
+        }
+    }
+
+    section {
+        border-bottom: 1pt $gray-400 solid;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+}
